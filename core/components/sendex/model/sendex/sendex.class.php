@@ -66,7 +66,7 @@ class Sendex {
 		$mail->setHTML(true);
 
 		$response = !$mail->send()
-			? $mail->mailer->errorInfo
+			? $mail->mailer->ErrorInfo
 			: true;
 		$mail->reset();
 
